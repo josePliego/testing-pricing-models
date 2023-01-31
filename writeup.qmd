@@ -1,0 +1,16 @@
+---
+title: "Testing Differences in Performance of Pricing Models"
+author: "Jose Pliego San Martin"
+bibliography: portfolio.bib
+nocite: '@*'
+format: pdf
+fontsize: 11pt
+geometry: margin = 0.7in
+date: today
+date-format: "MMMM DD, YYYY"
+csl: apa-6th-edition.csl
+---
+
+\newpage
+
+# Bibliography
