@@ -11,12 +11,12 @@ skimr::skim(dt)
 
 dt |>
   ggplot(aes(x = loss)) +
-  geom_density(fill = "steelblue1") +
+  geom_density(fill = "#00539B") +
   theme_bw()
 
 dt |>
   ggplot(aes(x = log(loss))) +
-  geom_density(fill = "steelblue1") +
+  geom_density(fill = "#00539B") +
   theme_bw()
 
 
@@ -83,4 +83,8 @@ dt_group |>
 # 4. Write data -----------------------------------------------------------
 
 cat("Writing file: data/processed/dt_grouped.rds\n")
-write_rds(dt_group, "data/processed/dt_grouped.rds", compress = "gz")
+dt_group |>
+  # mutate(across(loss, log)) |>
+  write_rds("data/processed/dt_grouped.rds", compress = "gz")
+
+beepr::beep()
