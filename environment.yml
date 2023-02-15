@@ -1,7 +1,0 @@
-name: portfolio
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python
-  - optuna
