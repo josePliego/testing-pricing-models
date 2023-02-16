@@ -1,11 +1,11 @@
 # 02_model_template.R
 # Reference https://www.nielsvandervelden.com/blog/2022-02-16-tune-tidymodels-using-the-optuna-python-library/
 
-library(tidyverse)
-library(tidymodels)
-library(bonsai)
-library(parallel)
-library(doFuture)
+library("tidyverse")
+library("tidymodels")
+library("bonsai")
+library("parallel")
+library("doFuture")
 
 registerDoFuture()
 cl <- makeCluster(6)

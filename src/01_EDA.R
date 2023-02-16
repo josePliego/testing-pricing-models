@@ -1,6 +1,6 @@
 # 01_EDA.R
 
-library(tidyverse)
+library("tidyverse")
 
 dt <- read_csv("data/raw/train.csv")
 
