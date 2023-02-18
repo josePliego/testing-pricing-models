@@ -1,3 +1,4 @@
+ignore
 .git.bfg-report
 .idea
 */.DS_Store
