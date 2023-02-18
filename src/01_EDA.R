@@ -84,7 +84,7 @@ dt_group |>
 
 cat("Writing file: data/processed/dt_grouped.rds\n")
 dt_group |>
-  # mutate(across(loss, log)) |>
-  write_rds("data/processed/dt_grouped.rds", compress = "gz")
+  mutate(across(loss, log)) |>
+  write_csv("data/processed/dt_grouped.csv")
 
 beepr::beep()

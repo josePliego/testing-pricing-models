@@ -1,12 +1,12 @@
 library("tidyverse")
 library("rsample")
-library("fastDummies")
+# library("fastDummies")
 
 dt <- read_rds("data/processed/dt_grouped.rds")
 
 set.seed(42)
 splits <- dt %>%
-  dummy_cols(remove_selected_columns = TRUE) %>%
+  # dummy_cols(remove_selected_columns = TRUE) %>%
   group_initial_split(prop = 0.8, group = "id")
 
 training(splits) %>%
@@ -21,4 +21,14 @@ testing(splits) %>%
   summarise(across(sq_dif, ~sqrt(mean(.x)))) %>%
   pull(sq_dif)
 
-# Initial RMSE: 2844.631
+# Initial RMSE: 0.809581
+
+for (i in colnames(training(splits))) {
+  if (str_detect(i, 'cat')) {
+    num = n_distinct(training(splits)[[i]])
+    if (num != n_distinct(testing(splits)[[i]])) {
+      print(num)
+      print(i)
+    }
+  }
+}
