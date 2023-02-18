@@ -1,6 +1,6 @@
 # Get Data
 
-Follow the instructions in https://github.com/Kaggle/kaggle-api to install the Kaggle API. Once you can call the kaggle bash command, go to the repo directory and use the following code to download the data (tested on a Mac M2, Ventura 13.1):
+Follow the instructions in https://github.com/Kaggle/kaggle-api to install the Kaggle API. Once you can call the `kaggle` bash command, go to the repo directory and use the following code to download the data (tested on a Mac M2, Ventura 13.1):
 
 ```bash
 mkdir data
