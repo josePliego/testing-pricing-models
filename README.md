@@ -5,7 +5,6 @@ Follow the instructions in https://github.com/Kaggle/kaggle-api to install the K
 ```bash
 mkdir data
 mkdir data/raw
-mkdir data/processed
 
 kaggle competitions download -p data/raw allstate-claims-severity
 unzip -d data/raw data/raw/allstate-claims-severity.zip
