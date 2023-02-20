@@ -30,7 +30,7 @@ dt_avg_rank <- dt_rank |>
   arrange(rank_mean)
 
 highlight_vars <- dt_avg_rank |>
-  slice(c(1, 3, 128, 72, 82, 130, 66)) |>
+  slice(c(1, 2, 128, 72, 82, 130, 66)) |>
   pull(var)
 
 imp_plot <- dt_rank |>
@@ -41,16 +41,15 @@ imp_plot <- dt_rank |>
   labs(
     y = "Importance Rank",
     x = "Model Index",
-    title = "Cross validation can be used to better estimate variable importance",
-    subtitle = "Importance shows more variability around the middle of the rankings"
+    title = "NCV estimations of variable importance",
     ) +
   theme_bw() +
   theme(legend.position = "none")
 
 png(
   "output/graphs/importance.png",
-  width = 25,
-  height = 15,
+  width = 13,
+  height = 7,
   units = "cm",
   res = 300
   )

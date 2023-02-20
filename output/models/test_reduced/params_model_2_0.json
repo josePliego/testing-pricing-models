@@ -1,0 +1,1 @@
+{"objective": "regression_l1", "metric": "l1", "learning_rate": 0.1, "num_threads": 0, "seed": 42, "verbosity": -1, "feature_pre_filter": false, "lambda_l1": 0.6424685749506508, "lambda_l2": 2.82724274862489e-07, "num_leaves": 45, "feature_fraction": 0.4, "bagging_fraction": 0.8875725769920808, "bagging_freq": 5, "min_child_samples": 25}

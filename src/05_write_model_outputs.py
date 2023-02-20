@@ -83,7 +83,3 @@ df_nonnested = pd.DataFrame(
 pd.concat([df_nested, df_nonnested]).to_csv(
     SOURCE_DIR + 'output/nested_vs_not.csv'
 )
-
-
-
-# Importances
