@@ -40,14 +40,14 @@ imp_plot <- dt_rank |>
   scale_x_continuous(breaks = 1:9) +
   labs(
     y = "Importance Rank",
-    x = "Model Index",
-    title = "NCV estimations of variable importance",
+    x = "Model Index"
+    # title = "NCV estimations of variable importance",
     ) +
   theme_bw() +
   theme(legend.position = "none")
 
 png(
-  "output/graphs/importance.png",
+  "output/graphs/importance_notitle.png",
   width = 13,
   height = 7,
   units = "cm",
